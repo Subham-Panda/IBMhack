@@ -3,7 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 
 const userRouter = require('./routes/userRoutes');
-const viewRouter = require('./routes/viewRoutes');
+//const viewRouter = require('./routes/viewRoutes');
 
 //Start express app
 const app = express();
@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 //ROUTES
-app.use('/', viewRouter);
+//app.use('/', viewRouter);
 app.use('/api/users', userRouter);
 
 //Exporting the express app
