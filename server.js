@@ -2,12 +2,12 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
 //Global uncaught exception dealer
-// process.on('uncaughtException', (err) => {
-//     console.log('UNHANDLED EXCEPTION! Shutting Down...');
-//     console.log(err.name, err.message);
+process.on('uncaughtException', (err) => {
+    console.log('UNHANDLED EXCEPTION! Shutting Down...');
+    console.log(err.name, err.message);
 
-//     process.exit(1);
-// });
+    process.exit(1);
+});
 
 dotenv.config({ path: './config.env' });
 
