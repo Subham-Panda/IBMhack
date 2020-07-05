@@ -33,7 +33,7 @@ app.all('*', (req, res, next) => {
 //On passing argument into next function in express, it automatically goes to the error handler function considering the argument of th next function as the error
 
 app.use(globalErrorHandler);
-//error handler function has 4 argumets as input
+//error handler function has 4 arguments as input
 
 //Exporting the express app
 module.exports = app;

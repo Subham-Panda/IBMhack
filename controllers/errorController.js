@@ -37,7 +37,7 @@ const handleValidationErrorDB = (err) => {
 };
 
 const handleJWTError = () =>
-    new AppError('Inavlid Token. Please Login again', 401);
+    new AppError('Invalid Token. Please Login again', 401);
 
 const handleJWTExpiredError = () =>
     new AppError('Token has Expired. Please Login again', 401);
