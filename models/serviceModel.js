@@ -1,11 +1,11 @@
-var mongoose = require("mongoose")
+// const mongoose = require('mongoose');
 
-var ServiceSchema = new mongoose.Schema({
-    name: String,
-    rate: Number,
-    seller: {
-        type: mongoose.Schema.Types.ObjectId,             
-        ref: "User",
-    },
-})
-module.exports = mongoose.model("Service",UserSchema);
+// const ServiceSchema = new mongoose.Schema({
+//     name: String,
+//     rate: Number,
+//     seller: {
+//         type: mongoose.Schema.Types.ObjectId,
+//         ref: 'User',
+//     },
+// });
+// module.exports = mongoose.model('Service', UserSchema);

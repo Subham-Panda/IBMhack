@@ -23,8 +23,11 @@ if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
 
+//Body parser, reading data from body into req.body
+app.use(express.json({ limit: '10kb' })); //the option given as object limits data in the req body
+app.use(express.urlencoded({ extended: true, limit: '10kb' }));
+
 //ROUTES
-//app.use('/', viewRouter);
 app.use('/api/users', userRouter);
 
 app.all('*', (req, res, next) => {
