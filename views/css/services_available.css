@@ -1,0 +1,68 @@
+.navbar.navbar-dark.navbar-expand-md.bg-dark {
+  background: rgba(0,0,0,0.30) !important;
+}
+
+
+.nav-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center !important;
+}
+
+.input{
+	border-radius: 15px;
+}
+.bell{
+	width: 30px;
+	height: 30px;
+}
+.young{
+	width: 30px;
+	height: 30px;
+	border-color: green;
+}
+
+@media (min-width: 300px) {
+  video {
+    width: 90%;
+  }
+}
+
+.heading{
+	padding-top: 70px;
+	text-align: center;
+	font-size: 50px;
+	font-family: Arial Black;
+}
+.box{
+	height: 250px;
+	width: 600px;
+	border-radius: 30px;
+	border-style: groove;
+	margin-top: 20px;
+	text-align: left;
+
+}
+.text{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.details{
+	height: 25px;
+	width: 120px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0); 
+    margin-top: 20px;
+	color: #23F518; 
+	border-color: #23F518;
+}
+.food{
+	height: 170px;
+	width: 180px;
+	border-radius: 10px;
+}
+.image{
+	margin-left: 370px;
+	margin-top: -140px;
+}
+
