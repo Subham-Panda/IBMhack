@@ -1,0 +1,38 @@
+.title{
+	text-align: center;
+	font-size: 50px;
+	font-family: Calibri;
+	color:white;
+}
+.box{
+	height: 300px;
+	width: 500px;
+	background-color: rgb(0,0,0,0.4);
+	text-align: center;
+}
+.input{
+	border-radius: 200;
+	border-width: 0;
+	margin-top: 50px;
+	height: 30px;
+	width: 250px;
+	border-radius: 5px;
+}
+.button{
+	margin-top: 50px;
+	height: 40px;
+	width: 120px;
+	margin-left: -30px;
+	border-radius: 10px;
+	border-width: 0;
+	background-color: #23F518;
+}
+.back{
+	height: 45px;
+	width: 45px;
+	border-radius: 100%;
+	background-color: rgba(0,0,0,0); 
+	margin-left: 30px;
+	color: #23F518; 
+	border-color: #23F518;
+}
