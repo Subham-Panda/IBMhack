@@ -30,7 +30,7 @@ class APIfeatures {
             this.query = this.query.sort(sortBy);
             //sort('price ratingsAverage')
         } else {
-            this.query = this.query.sort('-createdAt');
+            this.query = this.query.sort('-ratingsAverage');
         }
 
         return this;
