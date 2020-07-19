@@ -1,8 +1,15 @@
 var mongoose = require("mongoose")
 
 var ProductSchema = new mongoose.Schema({
-    name: String,
-    price: Number,
+    name: {
+        type: String,
+        required: [true, 'A Product must have a name'],
+        trim: true,
+    },
+    price: {
+        type: Number,
+        required: [true, 'A product must have a price'],
+    },
     stock: String,
     image: String,
     seller: {
