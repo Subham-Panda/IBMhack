@@ -43,8 +43,8 @@ const userSchema = new mongoose.Schema({
         default: true,
         select: false,
     },
-    // products: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Product' }],
-    // services: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Service' }],
+    products: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Product' }],
+    services: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Service' }],
     // ordersGiven: [
     //     {
     //         isProduct: { type: Boolean, default: true },

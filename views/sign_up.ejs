@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/sign_up.css">
 	<title>Sign Up</title>
 </head>
@@ -8,25 +9,26 @@
 	<h1 class="title">Sign Up</h1>
 	<center>
     <div class="box">
-        <form>
-    	<input type="text" name="text" placeholder="NAME" class="input">
+        <form id="signup-form">
+    	<input type="text" name="text" placeholder="NAME" class="input name">
     	<br>
-    	<input type="number" name="text" placeholder="MOBILE NO." class="input">
+    	<input type="number" name="text" placeholder="MOBILE NO." class="input contactNumber">
         <br>
         <input type="text" name="text" placeholder="PROFESSION" class="input">
         <br>
-        <input type="text" name="text" placeholder="EMAIL ID" class="input">
+        <input type="text" name="text" placeholder="EMAIL ID" class="input email">
         <br>
-        <input type="password" name="text" placeholder="PASSWORD" class="input">
+        <input type="password" name="text" placeholder="PASSWORD" class="input password">
     	<br>
         <input type="password" name="text" placeholder="CONFIRM PASSWORD" class="input">
         <br>
-        <textarea placeholder="DETAILS" class="details"></textarea>
+        <textarea placeholder="DETAILS" class="details about"></textarea>
         <br>
-        <button class="button" ><div style="color:white">SIGN UP</div></button>
+        <button class="button" id="submit"><div style="color:white">SIGN UP</div></button>
         <button class="back">back</button>
         </form>
     </div>
     </center>
+    <script type="text/javascript" src="/js/sign_up.js"></script>
 </body>
 </html>

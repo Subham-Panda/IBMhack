@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/items_available.css">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/items_available.css">
 	<title>Items Available</title>
 	<link href="https://fonts.googleapis.com/css?family=Lemon&display=swap" rel="stylesheet">
 	<style>
 @import url('https://fonts.googleapis.com/css?family=Lemon&display=swap');
 </style>
- <script src="items_available.js"></script>  
+ <script src="/js/items_available.js"></script>  
 </head>
 
-<link rel="stylesheet" type="text/css" href="landing.css">
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,62 +34,9 @@
 </nav>
 <div>
 	<h1 class="heading">Items Available</h1>
-	<center>
-	<div class="box">
-		<div class="text col-md col-md-6">
-		<b>WOOD STOCK</b>
-		<hr>
-		<b>OWNER:</b> Arnab Poddar
-		<br>
-		<b>QUANTITY:</b> 200tons
-		<br>
-		<b>PRICE:</b> Rs150/- pr kg.
-		<br>
-		<button class="details">Check Details</button>
-        </div>
-        <div class="col-md col-md-6 image"><img class="food" src="pics/food.jpg"></div>
-	</div>
-	<div class="box">
-		<div class="text col-md col-md-6">
-		<b>RICE STOCK</b>
-		<hr>
-		<b>OWNER:</b> Subham Panda
-		<br>
-		<b>QUANTITY:</b> 100tons
-		<br>
-		<b>PRICE:</b> Rs50/- pr kg.
-		<br>
-		<button class="details">Check Details</button>
-        </div>
-        <div class="col-md col-md-6 image"><img class="food" src="pics/food.jpg"></div>
-	</div>
-	<div class="box">
-		<div class="text col-md col-md-6">
-		<b>IRON STOCK</b>
-		<hr>
-		<b>OWNER:</b> Nikhar Gangwar
-		<br>
-		<b>QUANTITY:</b> 50tons
-		<br>
-		<b>PRICE:</b> Rs200/- pr kg.
-		<br>
-		<button class="details">Check Details</button>
-        </div>
-        <div class="col-md col-md-6 image"><img class="food" src="pics/food.jpg"></div>
-	</div>
-	<div class="box">
-		<div class="text col-md col-md-6">
-		<b>WHEAT STOCK</b>
-		<hr>
-		<b>OWNER:</b> Shresth Raj
-		<br>
-		<b>QUANTITY:</b> 500tons
-		<br>
-		<b>PRICE:</b> Rs80/- pr kg.
-		<br>
-		<button class="details">Check Details</button>
-        </div>
-        <div class="col-md col-md-6 image"><img class="food" src="pics/food.jpg"></div>
+<center>
+	<div id="all">
+
 	</div>
 </center>
 </div>

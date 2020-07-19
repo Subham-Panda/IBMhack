@@ -1,29 +1,35 @@
 .title{
 	text-align: center;
-	font-size: 70px;
-	font-family: Arial Black;
+	font-size: 50px;
+	font-family: Calibri;
+	color:white;
 }
 .box{
-	height: 300px;
+	height: 480px;
 	width: 500px;
-	background-color: #9C9A99;
+	background-color: rgb(0,0,0,0.6);
 	text-align: center;
-	border-radius: 30px;
 }
 .input{
-	border-radius: 200;
 	border-width: 0;
-	margin-top: 50px;
+	margin-top: 20px;
 	height: 30px;
 	width: 250px;
-	border-radius: 20px;
+	border-radius: 5px;
+}
+.details{
+	border-width: 0;
+	margin-top: 20px;
+	height: 50px;
+	width: 250px;
+	border-radius: 5px;
 }
 .button{
-	margin-top: 50px;
-	height: 30px;
-	width: 100px;
+	margin-top: 35px;
+	height: 40px;
+	width: 120px;
 	margin-left: -30px;
-	border-radius: 20px;
+	border-radius: 10px;
 	border-width: 0;
 	background-color: #23F518;
 }

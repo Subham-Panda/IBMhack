@@ -1,6 +1,7 @@
 const express = require('express');
 const userController = require('../controllers/userController');
 const authController = require('../controllers/authController');
+const orderController=require('../controllers/orderController');
 
 const router = express.Router();
 
@@ -9,8 +10,13 @@ router.post('/login', authController.login);
 router.get('/logout', authController.logout);
 router.post('/forgotPassword', authController.forgotPassword);
 router.patch('/resetPassword/:token', authController.resetPassword);
+router.get('/products',orderController.allProducts);
+router.get('/services',orderController.allServices);
+
 
 router.use(authController.protect); //Since middlewares run in sequence, every route below this is protected
+router.post('/product',orderController.createProduct);
+router.post('/service',orderController.createService);
 
 router.patch('/updateMyPassword', authController.updatePassword);
 
