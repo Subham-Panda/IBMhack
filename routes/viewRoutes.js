@@ -15,4 +15,6 @@ router.get('/products', (req,res) => {res.render('items_available');})
 
 router.get('/services', (req,res) => {res.render('services_available');})
 
+router.get('/profile', (req,res) => {res.render('profile_page');})
+
 module.exports=router;

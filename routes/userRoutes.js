@@ -17,6 +17,7 @@ router.get('/services',orderController.allServices);
 router.use(authController.protect); //Since middlewares run in sequence, every route below this is protected
 router.post('/product',orderController.createProduct);
 router.post('/service',orderController.createService);
+router.post('/order',orderController.createOrder);
 
 router.patch('/updateMyPassword', authController.updatePassword);
 
