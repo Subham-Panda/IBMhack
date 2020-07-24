@@ -1,0 +1,16 @@
+.box{
+	margin-top: 100px;
+	height: 290px;
+	width: 500px;
+	text-align: center;
+	background-color: white;
+	border-style: groove;
+}
+.button{
+	margin-top: 55px;
+	height: 60px;
+	width: 160px;
+	margin-left: 0px;
+	border-radius: 10px;
+	background-color: #23F518;
+}
