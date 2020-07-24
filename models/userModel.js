@@ -43,26 +43,10 @@ const userSchema = new mongoose.Schema({
         default: true,
         select: false,
     },
-    // products: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Product' }],
-    // services: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Service' }],
-    // ordersGiven: [
-    //     {
-    //         isProduct: { type: Boolean, default: true },
-    //         product: { type: mongoose.Schema.Types.ObjectId, ref: 'Product' },
-    //         service: { type: mongoose.Schema.Types.ObjectId, ref: 'Service' },
-    //         seller: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-    //         isCompleted: { type: Boolean, default: false },
-    //     },
-    // ],
-    // ordersReceived: [
-    //     {
-    //         isProduct: { type: Boolean, default: true },
-    //         product: { type: mongoose.Schema.Types.ObjectId, ref: 'Product' },
-    //         service: { type: mongoose.Schema.Types.ObjectId, ref: 'Service' },
-    //         buyer: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-    //         isCompleted: { type: Boolean, default: false },
-    //     },
-    // ],
+    products: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Product' }],
+    services: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Service' }],
+    ordersGiven: [{type: mongoose.Schema.Types.ObjectId,ref: "Order" }],
+    ordersReceived: [{type: mongoose.Schema.Types.ObjectId,ref: "Order"}],
 });
 
 userSchema.pre('save', async function (next) {

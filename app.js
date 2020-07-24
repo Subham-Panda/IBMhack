@@ -1,22 +1,31 @@
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors');
+const helmet = require('helmet');
+const cookieParser = require('cookie-parser')
+
 
 const AppError = require('./utils/AppError');
 const globalErrorHandler = require('./controllers/errorController');
 const userRouter = require('./routes/userRoutes');
-//const viewRouter = require('./routes/viewRoutes');
+const viewRouter = require('./routes/viewRoutes');
 
 //Start express app
 const app = express();
 
 app.set('view engine', 'ejs');
-app.set('view', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 
 //GLOBAL MIDDLEWARES
 
+app.use(cors());
+app.use(helmet());
+app.options('*',cors());
+app.use(cookieParser());
 //Serving static files
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 //Development logging
 if (process.env.NODE_ENV === 'development') {
@@ -29,6 +38,7 @@ app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 
 //ROUTES
 app.use('/api/users', userRouter);
+app.use('/',viewRouter);
 
 app.all('*', (req, res, next) => {
     next(new AppError(`Can't find ${req.originalUrl} on this server`, 404));

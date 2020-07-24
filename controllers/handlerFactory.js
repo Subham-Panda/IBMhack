@@ -1,6 +1,10 @@
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/AppError');
 const APIfeatures = require('../utils/APIfeatures');
+const Product = require('../models/productModel');
+const Service = require('../models/serviceModel');
+const Order = require('../models/orderModel');
+const User = require('../models/userModel');
 
 exports.deleteOne = (Model) =>
     catchAsync(async (req, res, next) => {
@@ -37,7 +41,28 @@ exports.createOne = (Model) =>
         // newDoc.save();
 
         const newDoc = await Model.create(req.body);
+        console.log(newDoc);
+        
+        if(Model === Product)
+        {
+            req.user.products.push(newDoc._id);
+            await req.user.save();
+        }
+        if(Model === Service)
+        {
+            req.user.services.push(newDoc._id);
+            await req.user.save();
+        }
+        if(Model === Order)
+        {
+            req.user.ordersGiven.push(newDoc._id);
+            await req.user.save();
+            let query = User.findById(req.body.seller);
+            const doc = await query;
+            doc.ordersReceived.push(newDoc._id);
+            await doc.save();
 
+        }
         res.status(201).json({
             status: 'success',
             data: {
