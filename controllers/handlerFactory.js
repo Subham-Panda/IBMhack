@@ -55,9 +55,12 @@ exports.createOne = (Model) =>
         }
         if(Model === Order)
         {
+            newDoc.seller = req.params.id;
+            newDoc.buyer = req.user._id;
+            await newDoc.save();
             req.user.ordersGiven.push(newDoc._id);
             await req.user.save();
-            let query = User.findById(req.body.seller);
+            let query = User.findById(req.params.id);
             const doc = await query;
             doc.ordersReceived.push(newDoc._id);
             await doc.save();

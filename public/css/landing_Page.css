@@ -1,6 +1,6 @@
 body{
   margin:0px;
-  padding: 0PX;
+  padding: 0px;
 
 }
 
@@ -91,13 +91,12 @@ border:none;
 }
 @keyframes animate  {
   0%,100%{
-    background-image: url(4.jpg);
-    b
+    background-image: url(../pics/landing_page_img/4.jpg);
   }
   33%{
-    background-image: url(10.jpg);
+    background-image: url(../pics/landing_page_img/10.jpg);
   }
   66%{
-    background-image: url(5.jpg);
+    background-image: url(../pics/landing_page_img/5.jpg);
   }
 }
