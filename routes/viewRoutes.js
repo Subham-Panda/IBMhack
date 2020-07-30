@@ -15,8 +15,12 @@ router.get('/products', (req,res) => {res.render('items_available');})
 
 router.get('/services', (req,res) => {res.render('services_available');})
 
-router.get('/order/:id',(req,res) => (res.render('date_time')));
+router.get('/order/:id',(req,res) => {res.render('date_time');});
 
-router.get('/profile', (req,res) => {res.render('profile_page');})
+
+router.get('/profile', (req,res) => {
+    console.log(req.user);
+    res.render('profile_page',{user: req.user})
+});
 
 module.exports=router;

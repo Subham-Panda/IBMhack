@@ -2,7 +2,6 @@ const order = async (name,quantity) => {
     console.log("Order testing")
     var url = window.location.pathname;
     var getQuery = url.split('/')[2];
-    console.log(getQuery);
     const res = await axios({
         method: 'POST',
         url: `/api/users/order/${getQuery}`,

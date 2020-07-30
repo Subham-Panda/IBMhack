@@ -27,5 +27,6 @@ document.getElementById("signup-form").addEventListener("submit",(e)=>{
     var email         = document.querySelector(".email").value;
     var contactNumber = document.querySelector(".contactNumber").value;
     var about         = document.querySelector(".about").value;
-    signup(name,password,email,contactNumber,about);
+    var prof          = document.querySelector(".prof").value;
+    signup(name,password,email,contactNumber,about,prof);
 });

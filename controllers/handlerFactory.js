@@ -41,7 +41,6 @@ exports.createOne = (Model) =>
         // newDoc.save();
 
         const newDoc = await Model.create(req.body);
-        console.log(newDoc);
         
         if(Model === Product)
         {

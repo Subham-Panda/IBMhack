@@ -12,3 +12,7 @@ exports.allProducts=handler.getAll(Product);
 exports.allServices=handler.getAll(Service);
 
 exports.createOrder=handler.createOne(Order);
+
+exports.findProduct = handler.getOne(Product);
+
+exports.findService = handler.getOne(Service);

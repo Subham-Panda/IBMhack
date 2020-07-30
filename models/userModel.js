@@ -35,6 +35,8 @@ const userSchema = new mongoose.Schema({
         select: false, //password will not be sent in output anymore
     },
     about: String,
+    image:String,
+    profession: String, 
     passwordChangedAt: Date,
     passwordResetToken: String,
     passwordResetExpires: Date,
