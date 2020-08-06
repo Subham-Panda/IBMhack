@@ -1,0 +1,102 @@
+body{
+  margin:0px;
+  padding: 0px;
+
+}
+
+#outerbox{
+  position: absolute;
+  left:0px;
+  top:0px;
+  width: 100%;
+  height:100vh;
+  background-size: cover;
+
+  animation: animate 15s ease infinite;
+}
+#innerbox{
+  position: absolute;
+  left:0px;
+  top:0px;
+  width: 100%;
+  height:98vh;
+  background-size: cover;
+
+}
+.text{
+  position: fixed;
+  text-align: left;
+  top: 183px;
+  left: 180px;
+}
+.big
+{
+  font-family: Bebas Neue;
+  color: #fff;
+  font-size: 100px;
+}
+.small{
+  font-family: Helvetica;
+  color: #fff;
+  font-size: 27px;
+}
+.signup{
+  background: #04E07A;
+  color:#fff;
+  font-style: Roboto;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 30px;
+  padding: 10px 70px;
+  border: none;
+}
+.signup:hover{
+  background: #04ff7A;
+  color:#fff;
+  font-style: Roboto;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 30px;
+  padding: 10px 70px;
+  border: none;
+}
+.signin{
+  background: none;
+  color:#04E07A;
+  font-style: Roboto;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 30px;
+  padding: 10px 70px;
+  border: solid 2px #04E07A;
+}
+.signin:hover{
+  background: none;
+  color:#04ff7A;
+  font-style: Roboto;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 30px;
+  padding: 10px 70px;
+  border: solid 2px #04EE7A;
+}
+.skip{
+  background: none;
+  color:#fff;
+  font-style: Roboto;
+  font-weight: bold;
+  font-size: 25px;
+border:none;
+
+}
+@keyframes animate  {
+  0%,100%{
+    background-image: url(../pics/landing_page_img/4.jpg);
+  }
+  33%{
+    background-image: url(../pics/landing_page_img/10.jpg);
+  }
+  66%{
+    background-image: url(../pics/landing_page_img/5.jpg);
+  }
+}

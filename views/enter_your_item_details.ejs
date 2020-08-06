@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/enter_your_item_details.css">
+	<title>Enter your item details</title>
+</head>
+<body>
+	<h1 class="title"><b>ENTER YOUR PRODUCT DETAILS</b></h1>
+	<center>
+    <div class="box">
+		<form id="item-form">
+		<input type="text" name="name" placeholder="Item" class="input name">
+    	<br>
+    	<input type="number" name="price" placeholder="Price" class="input price">
+    	<br>
+        <input type="text" name="text" placeholder="Maximum Stock" class="input stock">
+		<br>
+		<input type="text" name="text" placeholder="Product Image" class="input image">
+        <br>
+        <button class="back">back</button>
+        <button class="button" type="submit">POST</button>
+		</form>
+    </div>
+	</center>
+	<script type="text/javascript" src="/js/create_product.js"></script>
+</body>
+</html>

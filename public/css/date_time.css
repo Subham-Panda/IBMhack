@@ -1,0 +1,27 @@
+.box{
+	margin-top: 100px;
+	height: 290px;
+	width: 500px;
+	text-align: center;
+	background-color: white;
+	border-style: groove;
+}
+.button{
+	margin-top: 25px;
+	height: 40px;
+	width: 120px;
+	margin-left: 0px;
+	border-radius: 10px;
+	border-width: 0;
+	background-color: #23F518;
+}
+.date{
+	margin-top: 20px;
+	height: 40px;
+	width: 200px;
+}
+.time{
+	margin-top: 20px;
+	height: 40px;
+	width: 200px;
+}
